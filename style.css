@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.server-ip {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0;
+    color: #2c3e50;
+}
+
+.server-version {
+    text-align: center;
+    color: #7f8c8d;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: none;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.btn-primary {
+    background-color: #22b3de;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 0 #1a8aa9;
+}
+
+.btn-primary:hover {
+    background-color: #1c99bf;
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #1a8aa9;
+}
+
+.steps-container {
+    margin: 30px 0;
+}
+
+.step {
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+    border: 2px solid #eee;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.step h3 {
+    color: #22b3de;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.step p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.lead {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.active {
+    color: #22b3de !important;
+    font-weight: bold;
+}
+
+/* Loader atualizado */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s;
+}
+
+.minecraft-loader {
+    width: 200px; /* Ajuste conforme o tamanho da sua logo */
+    opacity: 0;
+    animation: logoFadeIn 1s ease forwards;
+}
+
+/* Animações */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.8s ease forwards;
+}
+
+/* Keyframes */
+@keyframes minecraft-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes logoFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    margin-top: 60px;
+    border-top: 2px solid #eee;
+}
+
+.footer-logo {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #666;
+    font-size: 18px;
+    margin: 0;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    color: #22b3de;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #1c99bf;
+}
